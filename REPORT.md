@@ -13,3 +13,9 @@
 ## 2. Свежий кейс
 
 В [итогах Yandex Cloud за 2025 год](https://yandex.cloud/ru/blog/financial-results-2025) приведён кластер ClickHouse внешнего заказчика объёмом 2,5 ПБ. Кейс относится к колоночной аналитике; публикация не раскрывает имя заказчика и сравнение скорости до/после. Число не относится ко всем клиентам или к единой базе Яндекса. Добавлен рассказ на 40 секунд.
+
+## 3. Фактчекинг и уточнения
+
+[Официальная новость Яндекса](https://www.yandex.ru/company/news/2016-0615) подтверждает происхождение ClickHouse и открытие кода 15 июня 2016 года. Статус: **подтверждено**. Дата не подменяет начало разработки.
+
+Исправлена ошибочная строка про узлы графа в колоночной модели. Разведены [колоночная аналитика ClickHouse](https://clickhouse.com/docs/intro) и [wide-column Cassandra](https://cassandra.apache.org/doc/latest/cassandra/developing/data-modeling/intro.html). Убраны абсолютные запреты JOIN/сложных запросов: [MongoDB поддерживает $lookup](https://www.mongodb.com/docs/manual/reference/operator/aggregation/lookup/), [DynamoDB имеет запросы и вторичные индексы](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html). Возможности реализации не следуют автоматически из названия модели.
