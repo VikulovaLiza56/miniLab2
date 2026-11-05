@@ -27,3 +27,23 @@
 ## 5. Тренды
 
 Добавлен сюжет о [лицензировании Redis 8 в 2025 году](https://redis.io/blog/agplv3/): AGPLv3 добавлена как один из вариантов. Это не смена лицензий старых версий задним числом. Комментарий: кроме модели и производительности, при выборе продукта важны версия и условия использования.
+
+## 6. Иллюстрация и промты
+
+Генератор: встроенный ImageGen в Codex. Созданы два независимых варианта; оба сохранены в `pic/variants/`. В слайд встроен второй.
+
+### Первый промт
+
+```text
+Isometric 3D illustration, soft pastel palette (mint green, sky blue, sandy), many translucent database columns holding small data cubes, glossy translucent elements and glass panels with data icons, clean tech style, soft studio lighting, light background, no text, no logos. Educational slide about a column-oriented database. Vertical right-column composition. -ar 3:4
+```
+
+Первый вариант перегружен дополнительными панелями и мини-схемами. Во втором промте потребована одна таблица, три колонки и одна лупа; композиция стала проще, появились широкие поля. Иллюстрация показывает идею выборочного чтения столбца, а не точную архитектуру ClickHouse.
+
+### Второй промт
+
+```text
+Isometric 3D illustration, soft pastel palette (mint green, sky blue, sandy), exactly one small transparent table separating into three simple vertical column stacks, one subtle glass magnifying lens inspecting only one column, glossy translucent elements, clean tech style, soft studio lighting, pure light background, no text, no letters, no logos, no extra floating dashboards or repeated mini-diagrams. Single compact central scene, generous blank margins, readable at small size in the right 35 percent of an educational slide. Portrait. -ar 3:4
+```
+
+Промт повторён в HTML-комментарии исходного Markdown. Текст и подписи добавляются средствами Marp, а не генератором изображений.
